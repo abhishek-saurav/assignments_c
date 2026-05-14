@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Container Fluid</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f1f8e9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid" style="background-color: #1b5e20; color: white; padding: 20px; text-align: center;">
+    <h1>Container Fluid Header</h1>
+    <p>This header stretches to the full width of the screen using container-fluid.</p>
+  </div>
+
+  <div class="container-fluid" style="background-color: #c8e6c9; padding: 30px; margin-top: 10px;">
+    <h3 style="color: #1b5e20;">Full Width Section</h3>
+    <p style="color: #37474f;">
+      Unlike .container which has a max-width, .container-fluid always takes up 100% of the viewport width.
+      This is useful for banners, headers, and full-width sections.
+    </p>
+
+    <div class="row">
+      <div class="col-sm-4" style="background-color: #a5d6a7; padding: 20px; border: 1px solid #66bb6a;">
+        <strong>Column 1</strong>
+      </div>
+      <div class="col-sm-4" style="background-color: #81c784; padding: 20px; border: 1px solid #66bb6a;">
+        <strong>Column 2</strong>
+      </div>
+      <div class="col-sm-4" style="background-color: #a5d6a7; padding: 20px; border: 1px solid #66bb6a;">
+        <strong>Column 3</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style="background-color: #1b5e20; color: white; padding: 14px; text-align: center; margin-top: 10px;">
+    <p style="margin: 0;">Full Width Footer</p>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

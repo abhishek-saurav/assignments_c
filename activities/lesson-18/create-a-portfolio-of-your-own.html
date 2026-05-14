@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    #topnav {
+      background-color: #0d47a1;
+    }
+
+    .hero-box {
+      height: 300px;
+      text-align: center;
+      padding-top: 100px;
+      color: white;
+    }
+
+    #slide-1 { background-color: #0d47a1; }
+    #slide-2 { background-color: #4a148c; }
+
+    .section-pad {
+      padding: 50px 0;
+    }
+
+    #home-sec    { background-color: #e3f2fd; }
+    #projects-sec { background-color: #f3e5f5; }
+    #contact-sec { background-color: #e8f5e9; }
+
+    .navbar-nav .nav-link.active {
+      color: #ffeb3b !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#topnav" data-offset="70">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topnav">
+    <a class="navbar-brand" href="#">Sam</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home-sec">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects-sec">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-sec">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style="margin-top: 56px;"></div>
+
+  <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-box" id="slide-1">
+          <h2>Hi, I'm Sam</h2>
+          <p>Student Developer</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-box" id="slide-2">
+          <h2>My Projects</h2>
+          <p>HTML, CSS and Bootstrap</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#heroCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <section id="home-sec" class="section-pad">
+    <div class="container">
+      <h2 style="color: #0d47a1; text-align: center;">Home</h2>
+      <p style="text-align: center; color: #546e7a;">I am a Grade 10 student who loves coding, chess, and photography.</p>
+    </div>
+  </section>
+
+  <section id="projects-sec" class="section-pad">
+    <div class="container">
+      <h2 style="color: #4a148c; text-align: center;">Projects</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #4a148c;">Weather App</h5>
+              <p class="card-text" style="color: #546e7a;">A weather homepage built with CSS gradients and animation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #4a148c;">Restaurant Menu</h5>
+              <p class="card-text" style="color: #546e7a;">A menu card built with CSS text styling properties.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #4a148c;">Zoo Tracker</h5>
+              <p class="card-text" style="color: #546e7a;">An animal rescue tracker using CSS positioning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-sec" class="section-pad">
+    <div class="container">
+      <h2 style="color: #2e7d32; text-align: center;">Contact</h2>
+      <p style="text-align: center; color: #546e7a;">Email: sam@example.com</p>
+      <p style="text-align: center;">
+        <a href="mailto:sam@example.com" class="btn btn-success">Send a Message</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="container-fluid" style="background-color: #0d47a1; color: white; text-align: center; padding: 16px;">
+    <p style="margin: 0;">Sam's Portfolio &mdash; 2025</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

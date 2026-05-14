@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Horizontal Scrollspy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .section-block {
+      padding: 60px 0;
+    }
+
+    #sec-home    { background-color: #e3f2fd; }
+    #sec-about   { background-color: #f3e5f5; }
+    #sec-contact { background-color: #e8f5e9; }
+
+    .navbar-nav .nav-link.active {
+      color: #ffeb3b !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myNav" data-offset="60">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav" style="background-color: #1a237e;">
+    <a class="navbar-brand" href="#">My Page</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#sec-home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sec-about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sec-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style="margin-top: 56px;"></div>
+
+  <section id="sec-home" class="section-block">
+    <div class="container">
+      <h2 style="color: #1565c0;">Home</h2>
+      <p>This is the Home section. Scroll down to see the navbar links highlight as you move through the page.</p>
+      <p>The scrollspy is set up using data-spy="scroll" on the body tag and data-target pointing to the navbar id.</p>
+    </div>
+  </section>
+
+  <section id="sec-about" class="section-block">
+    <div class="container">
+      <h2 style="color: #6a1b9a;">About</h2>
+      <p>This is the About section. Notice the navbar link changed to yellow when you scrolled here.</p>
+      <p>That happens because Bootstrap's scrollspy adds the active class to the matching nav link.</p>
+    </div>
+  </section>
+
+  <section id="sec-contact" class="section-block">
+    <div class="container">
+      <h2 style="color: #2e7d32;">Contact</h2>
+      <p>This is the Contact section. The Contact link in the navbar is now highlighted.</p>
+      <p>Email: sam@example.com</p>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
