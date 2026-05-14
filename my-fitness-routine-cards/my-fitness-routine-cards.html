@@ -9,27 +9,17 @@
       box-sizing: border-box;
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Page body                                                            */
-    /* ------------------------------------------------------------------ */
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f4f8;
       color: #1a1a2e;
-      margin: 0;
-      padding: 0;
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Page heading banner                                                  */
-    /* ------------------------------------------------------------------ */
     .page-banner {
       background-color: #1565c0;
       color: white;
       text-align: center;
-      /* padding — adds space INSIDE the banner */
       padding: 24px 16px;
-      /* margin — zero on all sides */
       margin: 0;
     }
 
@@ -44,16 +34,10 @@
       color: #bbdefb;
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Intro box — content area with padding, border, and margin           */
-    /* ------------------------------------------------------------------ */
     .intro-box {
       width: 600px;
-      /* content sits inside; width controls the content area */
       margin: 30px auto;
-      /* padding — space between content and border */
       padding: 20px 24px;
-      /* border — visible edge around the box */
       border: 3px solid #1565c0;
       background-color: #e3f2fd;
     }
@@ -69,41 +53,22 @@
       font-size: 15px;
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Card row — clearfix using clear: both                                */
-    /* ------------------------------------------------------------------ */
     .card-row {
       width: 720px;
       margin: 0 auto 30px;
     }
 
-    /* Clear: both stops content below from wrapping around floated cards */
-    .card-row::after {
-      content: "";
-      display: block;
+    .clear {
       clear: both;
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Fitness routine card — full box model demonstration                  */
-    /* ------------------------------------------------------------------ */
     .routine-card {
-      /* Content area */
       width: 220px;
       height: 280px;
-
-      /* Padding — space inside the card between content and border */
       padding: 18px 16px;
-
-      /* Border — visible frame around the card */
       border: 2px solid #1565c0;
-
-      /* Margin — space outside the card, pushing it away from neighbours */
       margin: 16px 10px;
-
       background-color: white;
-
-      /* float — places cards side by side */
       float: left;
     }
 
@@ -133,7 +98,6 @@
       line-height: 1.9;
     }
 
-    /* Different border colours for each card type */
     .card-warm-up  { border-color: #ff6f00; }
     .card-cardio   { border-color: #e53935; }
     .card-strength { border-color: #2e7d32; }
@@ -142,9 +106,6 @@
     .card-cardio   h3 { color: #b71c1c; border-bottom-color: #ffcdd2; }
     .card-strength h3 { color: #1b5e20; border-bottom-color: #c8e6c9; }
 
-    /* ------------------------------------------------------------------ */
-    /* Summary section below the cards — margin keeps it below float       */
-    /* ------------------------------------------------------------------ */
     .summary {
       width: 720px;
       margin: 0 auto 40px;
@@ -171,20 +132,16 @@
 
   <div class="page-banner">
     <h1>My Fitness Routine Cards</h1>
-    <p>A weekly workout plan — styled using the CSS Box Model</p>
+    <p>A weekly workout plan</p>
   </div>
 
   <div class="intro-box">
     <h2>About This Plan</h2>
     <p>
-      This fitness routine is designed for beginners. Each card below shows one
-      part of the workout. The cards are arranged side by side using
-      <strong>float: left</strong>, and <strong>clear: both</strong> resets
-      the layout below them.
+      This fitness routine is for beginners. Each card shows one part of the workout.
     </p>
   </div>
 
-  <!-- Three cards float left inside this row -->
   <div class="card-row">
 
     <div class="routine-card card-warm-up">
@@ -223,15 +180,14 @@
       </ul>
     </div>
 
+    <div class="clear"></div>
   </div>
-  <!-- clear: both in .card-row::after means this section starts below all cards -->
 
   <div class="summary">
     <h2>Weekly Goal</h2>
     <p>
       Complete this routine 3 times a week — Monday, Wednesday, and Friday.
       Drink plenty of water, eat well, and rest on alternate days.
-      Track your progress each week and increase reps as you get stronger.
     </p>
   </div>
 

@@ -1,11 +1,7 @@
-/* External CSS — lesson1/style.css */
-
-/* Universal Selector — padding and margin reset */
 * {
   box-sizing: border-box;
 }
 
-/* Element Selectors */
 body {
   font-family: Arial, sans-serif;
   background-color: #fff3e0;
@@ -16,17 +12,14 @@ h1 {
   font-size: 38px;
 }
 
-/* ID Selector */
 #intro-banner {
   padding: 20px;
   margin-bottom: 20px;
 }
 
-/* Class Selectors */
 .character-card {
   margin: 0 auto;
   padding: 24px;
-  border-radius: 8px;
   text-align: left;
 }
 
@@ -34,19 +27,16 @@ h1 {
   display: inline-block;
   padding: 4px 12px;
   margin: 4px;
-  border-radius: 20px;
 }
 
 .character-name {
   font-size: 28px;
 }
 
-/* Group Selector */
 h2, h3 {
   margin-top: 20px;
 }
 
-/* Element Selector for list items */
 li {
   color: #4e342e;
   line-height: 2;
