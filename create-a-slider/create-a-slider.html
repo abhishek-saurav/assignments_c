@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create a Slider</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eceff1;
+      color: #212121;
+    }
+
+    #page-title {
+      text-align: center;
+      padding: 24px;
+      background: linear-gradient(to right, #37474f, #263238);
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 4px black;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .slide-content {
+      height: 320px;
+      text-align: center;
+      padding-top: 110px;
+    }
+
+    .slide-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .slide-subtitle {
+      font-size: 16px;
+      color: white;
+      margin-top: 8px;
+    }
+
+    #slide-one   { background-color: #1565c0; }
+    #slide-two   { background-color: #6a1b9a; }
+    #slide-three { background-color: #bf360c; }
+    #slide-four  { background-color: #1b5e20; }
+
+    #memory-slider {
+      box-shadow: 0 4px 16px #333;
+      margin: 30px auto;
+      max-width: 780px;
+    }
+
+    .jumbotron {
+      background-color: white;
+      border: 2px solid #1565c0;
+      max-width: 780px;
+      margin: 0 auto 30px;
+    }
+
+    .jumbotron h2 {
+      color: #1565c0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .jumbotron p {
+      font-size: 15px;
+      color: #455a64;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page-title">Sam's Memory Slider</div>
+
+  <div id="memory-slider" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#memory-slider" data-slide-to="0" class="active"></li>
+      <li data-target="#memory-slider" data-slide-to="1"></li>
+      <li data-target="#memory-slider" data-slide-to="2"></li>
+      <li data-target="#memory-slider" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="slide-content" id="slide-one">
+          <div class="slide-title">Summer Trip</div>
+          <div class="slide-subtitle">Manali, July 2024</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="slide-content" id="slide-two">
+          <div class="slide-title">Science Fair</div>
+          <div class="slide-subtitle">School Annual Event, 2024</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="slide-content" id="slide-three">
+          <div class="slide-title">Diwali Celebrations</div>
+          <div class="slide-subtitle">Home, October 2024</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="slide-content" id="slide-four">
+          <div class="slide-title">Sports Day</div>
+          <div class="slide-subtitle">School Ground, December 2024</div>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#memory-slider" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#memory-slider" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  <div class="jumbotron" style="padding: 30px;">
+    <h2>About This Slider</h2>
+    <p>
+      This slider was built using Bootstrap's Carousel component.
+      Each slide has a different background color.
+    </p>
+    <a href="#memory-slider" data-slide="prev" class="btn btn-primary">&#8592; Previous</a>
+    <a href="#memory-slider" data-slide="next" class="btn btn-secondary">Next &#8594;</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

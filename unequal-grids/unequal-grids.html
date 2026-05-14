@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unequal Grids</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #1b5e20;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 18px;
+    }
+
+    p {
+      color: white;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    #col-a { background-color: #1565c0; padding: 20px; }
+    #col-b { background-color: #6a1b9a; padding: 20px; }
+    #col-c { background-color: #bf360c; padding: 20px; }
+
+    #col-d { background-color: #004d40; padding: 20px; }
+    #col-e { background-color: #e65100; padding: 20px; }
+
+    #col-f { background-color: #880e4f; padding: 20px; }
+    #col-g { background-color: #33691e; padding: 20px; }
+    #col-h { background-color: #0d47a1; padding: 20px; }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid" style="padding: 30px;">
+
+    <h1>Unequal Area Grids</h1>
+    <p style="text-align:center; color:#546e7a;">
+      Bootstrap grid columns must always add up to 12 per row.
+    </p>
+
+    <p style="color: #546e7a;">Row 1 — col-sm-3 + col-sm-4 + col-sm-5</p>
+    <div class="row">
+      <div id="col-a" class="col-sm-3">
+        <h2>3 Columns</h2>
+        <p>col-sm-3 — spans 3 of 12</p>
+      </div>
+      <div id="col-b" class="col-sm-4">
+        <h2>4 Columns</h2>
+        <p>col-sm-4 — spans 4 of 12</p>
+      </div>
+      <div id="col-c" class="col-sm-5">
+        <h2>5 Columns</h2>
+        <p>col-sm-5 — spans 5 of 12</p>
+      </div>
+    </div>
+
+    <p style="color: #546e7a;">Row 2 — col-sm-8 + col-sm-4</p>
+    <div class="row">
+      <div id="col-d" class="col-sm-8">
+        <h2>8 Columns — Main Content</h2>
+        <p>col-sm-8</p>
+      </div>
+      <div id="col-e" class="col-sm-4">
+        <h2>4 Columns — Sidebar</h2>
+        <p>col-sm-4</p>
+      </div>
+    </div>
+
+    <p style="color: #546e7a;">Row 3 — col-sm-2 + col-sm-6 + col-sm-4</p>
+    <div class="row">
+      <div id="col-f" class="col-sm-2">
+        <h2>2 cols</h2>
+        <p>col-sm-2</p>
+      </div>
+      <div id="col-g" class="col-sm-6">
+        <h2>6 Columns</h2>
+        <p>col-sm-6</p>
+      </div>
+      <div id="col-h" class="col-sm-4">
+        <h2>4 Columns</h2>
+        <p>col-sm-4</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

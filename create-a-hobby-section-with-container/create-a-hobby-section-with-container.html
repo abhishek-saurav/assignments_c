@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hobby Section with Container</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #212121;
+    }
+
+    #hero {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    #hero h1 {
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    #hero p {
+      font-size: 16px;
+      color: #c5cae9;
+    }
+
+    .hobby-heading {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1a237e;
+      text-transform: uppercase;
+      border-bottom: 2px solid #1a237e;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+    }
+
+    .hobby-desc {
+      font-size: 14px;
+      color: #424242;
+      line-height: 1.8;
+      text-indent: 20px;
+    }
+
+    h2, h3 {
+      color: #1a237e;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #4a148c;
+      margin: 30px 0 20px;
+    }
+
+    .hobby-box {
+      background-color: white;
+      border: 2px solid #3949ab;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hobby-icon {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .hobby-card {
+      background-color: white;
+      border: 1px solid #c5cae9;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 2px 2px 8px #c5cae9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid" id="hero">
+    <h1>Sam's Hobby Page</h1>
+    <p>A portfolio section built with Bootstrap containers and CSS styling</p>
+  </div>
+
+  <div class="container" style="margin-top: 30px;">
+
+    <p class="section-title">My Hobbies</p>
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="hobby-box">
+          <div class="hobby-icon">📷</div>
+          <div class="hobby-heading">Photography</div>
+          <p class="hobby-desc">
+            Capturing the world one frame at a time. I love street photography
+            and golden-hour landscapes.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="hobby-box">
+          <div class="hobby-icon">♟️</div>
+          <div class="hobby-heading">Chess</div>
+          <p class="hobby-desc">
+            Strategic thinking and problem-solving over the board. I play blitz
+            games online daily and study openings every weekend.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="hobby-box">
+          <div class="hobby-icon">🎸</div>
+          <div class="hobby-heading">Guitar</div>
+          <p class="hobby-desc">
+            Self-taught for three years. I enjoy playing fingerstyle acoustic
+            arrangements of Bollywood and classic rock songs.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="hobby-card">
+          <div class="hobby-icon">📚</div>
+          <div class="hobby-heading">Reading</div>
+          <p class="hobby-desc">
+            Currently reading science fiction and popular science. Favourites include
+            The Martian, Sapiens, and any book by Isaac Asimov.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="hobby-card">
+          <div class="hobby-icon">🍳</div>
+          <div class="hobby-heading">Cooking</div>
+          <p class="hobby-desc">
+            Experimenting with South Indian and Italian recipes on weekends.
+            Making dosa batter from scratch is my proudest achievement so far.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid" style="background-color: #1a237e; color:white; text-align:center; padding:20px; margin-top:30px;">
+    <p style="margin:0; font-size:14px;">Sam's Portfolio &mdash; Built with Bootstrap &amp; CSS</p>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

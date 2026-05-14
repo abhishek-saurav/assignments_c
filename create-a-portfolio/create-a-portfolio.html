@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sam's Portfolio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #212121;
+    }
+
+    #main-nav {
+      background-color: #0d47a1;
+    }
+
+    .hero-slide {
+      height: 400px;
+      text-align: center;
+      padding-top: 140px;
+    }
+
+    #slide-home {
+      background: linear-gradient(to bottom, #0d47a1, #1565c0);
+    }
+
+    #slide-about {
+      background: linear-gradient(to bottom, #4a148c, #6a1b9a);
+    }
+
+    #slide-services {
+      background: linear-gradient(to bottom, #bf360c, #e64a19);
+    }
+
+    .hero-heading {
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    .hero-subtext {
+      font-size: 17px;
+      color: white;
+      margin-top: 10px;
+    }
+
+    .portfolio-section {
+      padding: 60px 0;
+    }
+
+    #home    { background-color: #e3f2fd; }
+    #about   { background-color: #f3e5f5; }
+    #services{ background-color: #fff3e0; }
+    #contact { background-color: #e8f5e9; }
+
+    h2, h3 {
+      font-weight: bold;
+    }
+
+    .section-heading {
+      font-size: 30px;
+      color: #0d47a1;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px #ccc;
+      margin-bottom: 30px;
+    }
+
+    .skill-badge {
+      background-color: #0d47a1;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 6px 14px;
+      display: inline-block;
+      margin: 4px;
+    }
+
+    .service-card {
+      background-color: white;
+      border: 2px solid #ff6f00;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 8px #ccc;
+      text-align: center;
+    }
+
+    .service-card h3 {
+      color: #e65100;
+      font-size: 18px;
+    }
+
+    .about-text {
+      font-size: 15px;
+      color: #4a148c;
+      line-height: 1.9;
+      text-indent: 30px;
+    }
+
+    .contact-label {
+      font-weight: bold;
+      color: #1b5e20;
+      font-size: 15px;
+    }
+
+    .contact-value {
+      color: #37474f;
+      font-size: 15px;
+    }
+
+    .navbar-nav .nav-link.active {
+      color: #ffeb3b !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" data-offset="70">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+    <a class="navbar-brand" href="#">Sam's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div style="margin-top: 56px;"></div>
+
+  <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#hero-carousel" data-slide-to="1"></li>
+      <li data-target="#hero-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="hero-slide" id="slide-home">
+          <div class="hero-heading">Welcome</div>
+          <div class="hero-subtext">Hi, I'm Sam — a student developer and creative thinker.</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" id="slide-about">
+          <div class="hero-heading">About Me</div>
+          <div class="hero-subtext">Passionate about coding, photography, and chess.</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" id="slide-services">
+          <div class="hero-heading">My Services</div>
+          <div class="hero-subtext">Web design, tutoring, and creative projects.</div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#hero-carousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#hero-carousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  <section id="home" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-heading">Home</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <p style="font-size:16px; color:#0d47a1; line-height:1.9;">
+            Welcome to my personal portfolio. I am a Grade 10 student with a
+            love for technology, creativity, and problem-solving. This site
+            was built using <strong>HTML, CSS, and Bootstrap</strong>.
+          </p>
+          <a href="#about" class="btn btn-primary">Learn About Me</a>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-size:14px; color:#546e7a; line-height:1.9;">
+            My Skills:
+          </p>
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">Bootstrap</span>
+          <span class="skill-badge">Photography</span>
+          <span class="skill-badge">Chess</span>
+          <span class="skill-badge">Guitar</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-heading" style="color:#4a148c;">About Me</h2>
+      <div class="row">
+        <div class="col-sm-8">
+          <p class="about-text">
+            My name is Sam. I am 15 years old and study at Greenfield High School.
+            I discovered my love for coding when I was 12 and have been building
+            websites and small projects ever since. I enjoy learning new technologies
+            and applying them to real-world problems.
+          </p>
+          <p class="about-text">
+            Outside of coding, I spend my time playing chess, practising guitar,
+            and taking photographs. I believe creativity and logic go hand in hand,
+            and both of my passions reflect that balance.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div style="background-color:#ce93d8; padding:30px; text-align:center; font-size:64px;">
+            👦
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-heading" style="color:#e65100;">Services</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div style="font-size:40px;">🌐</div>
+            <h3>Web Design</h3>
+            <p style="font-size:13px; color:#546e7a; line-height:1.7;">
+              Building clean, responsive websites using HTML, CSS, and Bootstrap.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div style="font-size:40px;">📷</div>
+            <h3>Photography</h3>
+            <p style="font-size:13px; color:#546e7a; line-height:1.7;">
+              Shooting events, portraits, and landscapes for school projects and families.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div style="font-size:40px;">🎓</div>
+            <h3>Tutoring</h3>
+            <p style="font-size:13px; color:#546e7a; line-height:1.7;">
+              Helping younger students with coding basics and mathematics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-heading" style="color:#1b5e20;">Contact</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <p><span class="contact-label">Name:</span> <span class="contact-value">Sam</span></p>
+          <p><span class="contact-label">School:</span> <span class="contact-value">Greenfield High School</span></p>
+          <p><span class="contact-label">Email:</span> <span class="contact-value">sam@example.com</span></p>
+          <p><span class="contact-label">Location:</span> <span class="contact-value">Bangalore, India</span></p>
+        </div>
+        <div class="col-sm-6">
+          <p style="font-size:14px; color:#546e7a; line-height:1.8;">
+            Feel free to reach out for collaborations, tutoring sessions,
+            photography requests, or just to say hello!
+          </p>
+          <a href="mailto:sam@example.com" class="btn btn-success">Send a Message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid" style="background-color:#0d47a1; color:white; text-align:center; padding:20px;">
+    <p style="margin:0; font-size:14px; letter-spacing:1px;">
+      Sam's Portfolio &mdash; Built with Bootstrap &amp; CSS &mdash; 2025
+    </p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
