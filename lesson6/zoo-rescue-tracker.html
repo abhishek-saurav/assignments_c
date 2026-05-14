@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Rescue Tracker</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      color: #1b5e20;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* FIXED — rescue alert bar stays visible while page scrolls           */
+    /* ------------------------------------------------------------------ */
+    .rescue-alert {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 100;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Page wrapper — pushed down so fixed bar doesn't overlap content     */
+    /* ------------------------------------------------------------------ */
+    .page-content {
+      margin-top: 44px;
+      padding: 20px 30px 60px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #1b5e20;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #388e3c;
+      margin-bottom: 24px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* STICKY — zone label sticks near top while scrolling within section  */
+    /* ------------------------------------------------------------------ */
+    .zone-label {
+      position: sticky;
+      top: 44px;          /* sticks just below the fixed alert bar */
+      background-color: #2e7d32;
+      color: white;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      z-index: 50;
+      margin-bottom: 12px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Animal cards — STATIC (default flow, no position property needed)   */
+    /* ------------------------------------------------------------------ */
+    .animal-card {
+      background-color: white;
+      border: 2px solid #a5d6a7;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+      width: 480px;
+    }
+
+    .animal-card h2 {
+      font-size: 18px;
+      color: #2e7d32;
+      margin-bottom: 6px;
+    }
+
+    .animal-card p {
+      font-size: 14px;
+      color: #4e342e;
+      line-height: 1.7;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* RELATIVE — koala card is shifted from its normal position           */
+    /* ------------------------------------------------------------------ */
+    .card-relative {
+      position: relative;
+      left: 30px;         /* moves 30px to the right from its original spot */
+      border-color: #ffa000;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* ABSOLUTE — "SAFE" tag is placed inside the panda card               */
+    /* The parent panda card needs position: relative as the anchor        */
+    /* ------------------------------------------------------------------ */
+    .card-absolute-parent {
+      position: relative;  /* makes this the anchor for the absolute child */
+    }
+
+    .safe-tag {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      background-color: #1b5e20;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Opacity — used on a card marked "needs attention" to dim it slightly */
+    /* ------------------------------------------------------------------ */
+    .card-dimmed {
+      opacity: 0.6;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Section spacing                                                      */
+    /* ------------------------------------------------------------------ */
+    .rescue-section {
+      margin-bottom: 30px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Legend at the bottom — explains each position type used             */
+    /* ------------------------------------------------------------------ */
+    .legend {
+      width: 480px;
+      margin-top: 30px;
+      padding: 16px;
+      background-color: #f1f8e9;
+      border: 1px solid #aed581;
+    }
+
+    .legend h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #33691e;
+    }
+
+    .legend ul {
+      padding-left: 18px;
+    }
+
+    .legend li {
+      font-size: 13px;
+      color: #37474f;
+      line-height: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FIXED — stays at the top while scrolling -->
+  <div class="rescue-alert">
+    🚨 Rescue Alert — 3 animals need immediate attention today
+  </div>
+
+  <div class="page-content">
+
+    <h1>🦁 Zoo Rescue Tracker</h1>
+    <p class="subtitle">Tracking animal rescue status across all zoo zones</p>
+
+    <!-- ---- ZONE A ---- -->
+    <div class="rescue-section">
+
+      <!-- STICKY — sticks just below the fixed bar while scrolling -->
+      <div class="zone-label">Zone A — Savannah</div>
+
+      <!-- STATIC — default flow, cards appear one below another -->
+      <div class="animal-card">
+        <h2>🦒 Giraffe — Spots</h2>
+        <p>
+          Spots was found with a small cut on her leg near the watering hole.
+          The vet team has cleaned and bandaged the wound. She is eating normally.
+          <br><strong>Status:</strong> Recovering
+        </p>
+      </div>
+
+      <!-- RELATIVE — shifted 30px to the right from its normal position -->
+      <div class="animal-card card-relative">
+        <h2>🐨 Koala — Biscuit</h2>
+        <p>
+          Biscuit was found dehydrated after the recent heatwave. She has been
+          moved to the care unit and is receiving fluids. This card is shifted
+          right using <code>position: relative; left: 30px</code>.
+          <br><strong>Status:</strong> Under Observation
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ---- ZONE B ---- -->
+    <div class="rescue-section">
+
+      <div class="zone-label">Zone B — Bamboo Forest</div>
+
+      <!-- ABSOLUTE parent — "SAFE" tag is placed absolutely inside this card -->
+      <div class="animal-card card-absolute-parent">
+        <!-- ABSOLUTE child — anchored to top-right of this card -->
+        <span class="safe-tag">SAFE</span>
+        <h2>🐼 Panda — Ming</h2>
+        <p>
+          Ming is healthy and fully recovered after last month's respiratory
+          infection. The green SAFE badge is placed using
+          <code>position: absolute; top: 12px; right: 14px</code> inside
+          the card (which uses <code>position: relative</code>).
+          <br><strong>Status:</strong> Healthy
+        </p>
+      </div>
+
+      <!-- DIMMED using opacity — draws attention to a card needing care -->
+      <div class="animal-card card-dimmed">
+        <h2>🦜 Parrot — Kiwi</h2>
+        <p>
+          Kiwi has not been eating well this week. The team is monitoring
+          closely. This card uses <code>opacity: 0.6</code> to show it
+          needs attention.
+          <br><strong>Status:</strong> Needs Attention
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ---- ZONE C ---- -->
+    <div class="rescue-section">
+
+      <div class="zone-label">Zone C — Aquatic Zone</div>
+
+      <div class="animal-card">
+        <h2>🐢 Tortoise — Rocky</h2>
+        <p>
+          Rocky was brought in after a shell crack. The veterinary team has
+          applied resin repair and placed him in a quiet recovery pool.
+          <br><strong>Status:</strong> Stable
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Position legend -->
+    <div class="legend">
+      <h3>CSS Positioning Used on This Page</h3>
+      <ul>
+        <li><strong>fixed</strong> — Rescue Alert bar (stays on screen while scrolling)</li>
+        <li><strong>sticky</strong> — Zone labels (stick below the fixed bar while scrolling)</li>
+        <li><strong>static</strong> — All animal cards by default (normal document flow)</li>
+        <li><strong>relative</strong> — Koala card (shifted 30px right from its normal place)</li>
+        <li><strong>absolute</strong> — SAFE badge inside the Panda card (anchored to card corner)</li>
+        <li><strong>opacity</strong> — Kiwi card dimmed to 0.6 to signal it needs attention</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

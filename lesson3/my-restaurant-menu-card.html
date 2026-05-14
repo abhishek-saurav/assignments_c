@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Restaurant Menu Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Body — font-family, background-color, color                         */
+    /* ------------------------------------------------------------------ */
+    body {
+      font-family: Georgia, serif;
+      background-color: #fff8e7;
+      color: #3b2f2f;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Restaurant name — font-size, font-weight, letter-spacing,           */
+    /*                   text-shadow                                        */
+    /* ------------------------------------------------------------------ */
+    .restaurant-name {
+      font-family: "Georgia", serif;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      color: #7b3f00;
+      text-shadow: 2px 2px 6px #d2b48c, 0 0 12px #f5deb3;
+      text-align: center;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Tagline — font-style italic, text-transform uppercase               */
+    /* ------------------------------------------------------------------ */
+    .tagline {
+      font-style: italic;
+      font-size: 16px;
+      color: #a0522d;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Menu card — box-shadow                                              */
+    /* ------------------------------------------------------------------ */
+    .menu-card {
+      width: 600px;
+      margin: 30px auto;
+      padding: 32px;
+      background-color: #fffdf5;
+      border: 2px solid #d2a679;
+      box-shadow: 4px 4px 16px rgba(139, 69, 19, 0.3);
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Section heading — text-transform capitalize, font-variant small-caps*/
+    /* ------------------------------------------------------------------ */
+    .section-heading {
+      font-size: 22px;
+      font-weight: bold;
+      color: #7b3f00;
+      text-transform: capitalize;
+      font-variant: small-caps;
+      border-bottom: 2px solid #d2a679;
+      padding-bottom: 6px;
+      margin-top: 24px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Dish name — font-family Courier New                                  */
+    /* ------------------------------------------------------------------ */
+    .dish-name {
+      font-family: "Courier New", monospace;
+      font-size: 20px;
+      font-weight: bold;
+      color: #5c3317;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Dish description — text-indent, line-height                         */
+    /* ------------------------------------------------------------------ */
+    .dish-description {
+      text-indent: 30px;
+      font-size: 14px;
+      color: #6b4c3b;
+      line-height: 1.9;
+      margin: 4px 0 0;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Old price — text-decoration line-through                            */
+    /* ------------------------------------------------------------------ */
+    .old-price {
+      text-decoration: line-through;
+      text-decoration-color: #999;
+      text-decoration-thickness: 2px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* New price — text-decoration underline                               */
+    /* ------------------------------------------------------------------ */
+    .new-price {
+      text-decoration: underline;
+      text-decoration-color: #7b3f00;
+      text-decoration-thickness: 2px;
+      font-weight: bold;
+      color: #7b3f00;
+      font-size: 15px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Offer banner — transform rotate, box-shadow, text-transform         */
+    /* ------------------------------------------------------------------ */
+    .offer-banner {
+      background-color: #e65100;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      margin: 24px 0 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      transform: rotate(-2deg);
+      box-shadow: 0 0 20px rgba(230, 81, 0, 0.5);
+    }
+
+    /* Dish row layout */
+    .dish-row {
+      margin-bottom: 16px;
+    }
+
+    .price-row {
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-card">
+    <div class="restaurant-name">Spice Garden</div>
+    <div class="tagline">where every dish tells a story</div>
+
+    <!-- Starters Section -->
+    <div class="section-heading">Starters</div>
+
+    <div class="dish-row">
+      <div class="dish-name">Paneer Tikka</div>
+      <p class="dish-description">
+        Soft cottage cheese marinated in aromatic spices and grilled to perfection
+        in a tandoor. Served with mint chutney and sliced onions.
+      </p>
+      <div class="price-row">
+        <span class="old-price">₹280</span>
+        &nbsp;
+        <span class="new-price">₹220</span>
+      </div>
+    </div>
+
+    <div class="dish-row">
+      <div class="dish-name">Crispy Corn</div>
+      <p class="dish-description">
+        Sweet corn kernels coated in a light batter and fried until golden.
+        Tossed with peppers, spices, and a squeeze of lime.
+      </p>
+      <div class="price-row">
+        <span class="new-price">₹180</span>
+      </div>
+    </div>
+
+    <!-- Mains Section -->
+    <div class="section-heading">Main Course</div>
+
+    <div class="dish-row">
+      <div class="dish-name">Dal Makhani</div>
+      <p class="dish-description">
+        Black lentils slow-cooked overnight with butter, cream, and a blend of
+        secret spices. A timeless classic from the heart of Punjab.
+      </p>
+      <div class="price-row">
+        <span class="old-price">₹350</span>
+        &nbsp;
+        <span class="new-price">₹299</span>
+      </div>
+    </div>
+
+    <div class="dish-row">
+      <div class="dish-name">Chicken Biryani</div>
+      <p class="dish-description">
+        Fragrant basmati rice layered with tender chicken, saffron, fried onions,
+        and whole spices. Sealed and dum-cooked for deep, rich flavours.
+      </p>
+      <div class="price-row">
+        <span class="new-price">₹420</span>
+      </div>
+    </div>
+
+    <!-- Offer Banner -->
+    <div class="offer-banner">
+      🌶️ 20% off on all mains — weekdays only!
+    </div>
+  </div>
+
+</body>
+</html>

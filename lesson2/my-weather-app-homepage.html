@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Weather App Homepage</title>
+  <style>
+    /* ------------------------------------------------------------------ */
+    /* Page body — background-color + dot pattern + fixed attachment        */
+    /* ------------------------------------------------------------------ */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+
+      background-color: #0d1b2a;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      background-repeat: repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Main weather card — linear-gradient                                  */
+    /* ------------------------------------------------------------------ */
+    .weather-card {
+      width: 380px;
+      margin: 40px auto;
+      padding: 32px;
+      border-radius: 16px;
+      background: linear-gradient(to bottom, #1565c0, #0d47a1);
+      text-align: center;
+    }
+
+    .city-name {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 0 0 4px;
+    }
+
+    .temperature {
+      font-size: 72px;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .condition {
+      font-size: 18px;
+      color: #bbdefb;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Floating weather icon — CSS animation with @keyframes               */
+    /* ------------------------------------------------------------------ */
+    .weather-icon {
+      font-size: 64px;
+      display: inline-block;
+      margin: 12px 0;
+
+      animation-name: float;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-14px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Weekly forecast section — radial-gradient                           */
+    /* ------------------------------------------------------------------ */
+    .forecast-section {
+      width: 380px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      border-radius: 16px;
+      background: radial-gradient(circle at top, #1a237e, #0d1b2a);
+    }
+
+    .forecast-section h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #90caf9;
+      margin: 0 0 14px;
+    }
+
+    .forecast-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .forecast-row:last-child {
+      border-bottom: none;
+    }
+
+    .forecast-temp {
+      color: #bbdefb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="weather-card">
+    <div class="city-name">Bangalore, India</div>
+    <div class="weather-icon">⛅</div>
+    <div class="temperature">27°C</div>
+    <div class="condition">Partly Cloudy</div>
+  </div>
+
+  <div class="forecast-section">
+    <h2>7-Day Forecast</h2>
+
+    <div class="forecast-row">
+      <span>Monday</span>
+      <span>🌧️</span>
+      <span class="forecast-temp">24°C</span>
+    </div>
+    <div class="forecast-row">
+      <span>Tuesday</span>
+      <span>☀️</span>
+      <span class="forecast-temp">30°C</span>
+    </div>
+    <div class="forecast-row">
+      <span>Wednesday</span>
+      <span>⛅</span>
+      <span class="forecast-temp">27°C</span>
+    </div>
+    <div class="forecast-row">
+      <span>Thursday</span>
+      <span>🌩️</span>
+      <span class="forecast-temp">22°C</span>
+    </div>
+    <div class="forecast-row">
+      <span>Friday</span>
+      <span>☀️</span>
+      <span class="forecast-temp">32°C</span>
+    </div>
+    <div class="forecast-row">
+      <span>Saturday</span>
+      <span>🌤️</span>
+      <span class="forecast-temp">29°C</span>
+    </div>
+    <div class="forecast-row">
+      <span>Sunday</span>
+      <span>🌧️</span>
+      <span class="forecast-temp">25°C</span>
+    </div>
+  </div>
+
+</body>
+</html>

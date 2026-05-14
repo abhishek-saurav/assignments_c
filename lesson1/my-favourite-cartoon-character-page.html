@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favourite Cartoon Character</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* Universal Selector — sets base font size and weight for every element */
+    * {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /* Element Selectors — targets HTML tags directly */
+    body {
+      background-color: #fff3e0;
+      color: #3e2723;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 36px;
+      color: #bf360c;
+    }
+
+    p {
+      color: #4e342e;
+      line-height: 1.8;
+    }
+
+    /* Group Selector — applies the same style to h2 and h3 */
+    h2, h3 {
+      color: #6a1a00;
+    }
+
+    /* Class Selectors */
+    .character-card {
+      background-color: #ffe0b2;
+      border: 2px solid #ff6f00;
+      width: 600px;
+    }
+
+    .character-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e65100;
+    }
+
+    .character-show {
+      color: #bf360c;
+      font-size: 15px;
+    }
+
+    .trait-badge {
+      background-color: #ff6f00;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .favourite-quote {
+      font-size: 17px;
+      color: #4a148c;
+    }
+
+    .fun-fact {
+      color: #1b5e20;
+      font-size: 14px;
+    }
+
+    /* ID Selector — targets one unique element */
+    #intro-banner {
+      background-color: #e64a19;
+      color: white;
+      text-align: center;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Inline CSS on the tagline paragraph -->
+  <p style="color: #880e4f; font-size: 14px; text-align: center;">
+    A fan page built with HTML and CSS
+  </p>
+
+  <div id="intro-banner">
+    <h1>My Favourite Cartoon Character</h1>
+  </div>
+
+  <div class="character-card">
+    <h2>Character Profile</h2>
+
+    <p class="character-name">Tom (from Tom and Jerry)</p>
+    <p class="character-show">Show: Tom and Jerry &nbsp;|&nbsp; Studio: MGM</p>
+
+    <h3>Personality Traits</h3>
+    <span class="trait-badge">Determined</span>
+    <span class="trait-badge">Clever</span>
+    <span class="trait-badge">Expressive</span>
+
+    <h3>Favourite Quote</h3>
+    <!-- Inline CSS to make this one paragraph stand out -->
+    <p class="favourite-quote" style="font-size: 18px; color: #6a1a00;">
+      "I will catch that mouse if it is the last thing I do!"
+    </p>
+
+    <h3>Why I Like This Character</h3>
+    <p>
+      Tom is incredibly expressive and funny. Even though he almost never catches
+      Jerry, he never gives up. His reactions and dramatic expressions make every
+      episode entertaining.
+    </p>
+
+    <h3>Fun Facts</h3>
+    <p class="fun-fact">First appeared in 1940 in the short film "Puss Gets the Boot".</p>
+    <p class="fun-fact">Tom has won seven Academy Awards alongside Jerry.</p>
+    <p class="fun-fact">His full name is Thomas Jasper Cat Sr.</p>
+  </div>
+
+  <h2>More Favourite Characters</h2>
+  <ul>
+    <li>Bugs Bunny — Looney Tunes</li>
+    <li>Doraemon — Doraemon</li>
+    <li>Shinchan — Crayon Shin-chan</li>
+  </ul>
+
+</body>
+</html>
