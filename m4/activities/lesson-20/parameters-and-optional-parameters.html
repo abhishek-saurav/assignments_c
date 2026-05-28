@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parameters and Optional Parameters</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    h2 { color: #4a148c; text-align: center; }
+    .output { background-color: #263238; color: #ce93d8; font-family: monospace; padding: 16px; margin: 20px auto; width: 500px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h2>Parameters and Optional Parameters</h2>
+  <div class="output" id="out"></div>
+  <script>
+    function log(msg) {
+      document.getElementById("out").innerHTML += msg + "<br>";
+    }
+
+    function greet(name) {
+      log("Hello, " + name + "!");
+    }
+
+    function introduce(name, age = 15) {
+      log(name + " is " + age + " years old.");
+    }
+
+    function describe(name, hobby = "coding", city = "Bangalore") {
+      log(name + " likes " + hobby + " and lives in " + city + ".");
+    }
+
+    greet("Sam");
+    greet("Priya");
+
+    introduce("Sam");
+    introduce("Rohan", 16);
+
+    describe("Sam");
+    describe("Aisha", "chess", "Mumbai");
+  </script>
+</body>
+</html>

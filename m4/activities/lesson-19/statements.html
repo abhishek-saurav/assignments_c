@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statements</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    h2 { color: #1a237e; text-align: center; }
+    .output { background-color: #263238; color: #90caf9; font-family: monospace; padding: 16px; margin: 20px auto; width: 500px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h2>Statements</h2>
+  <div class="output" id="out"></div>
+  <script>
+    function log(msg) {
+      document.getElementById("out").innerHTML += msg + "<br>";
+    }
+
+    var score = 85;
+
+    if (score >= 90) {
+      log("Grade: A");
+    } else if (score >= 75) {
+      log("Grade: B");
+    } else if (score >= 60) {
+      log("Grade: C");
+    } else {
+      log("Grade: F");
+    }
+
+    var isPass = score >= 50;
+    log("Passed: " + isPass);
+  </script>
+</body>
+</html>

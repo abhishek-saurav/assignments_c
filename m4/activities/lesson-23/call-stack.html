@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call Stack</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    h2 { color: #1565c0; text-align: center; }
+    .output { background-color: #263238; color: #90caf9; font-family: monospace; padding: 16px; margin: 20px auto; width: 500px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h2>Call Stack</h2>
+  <div class="output" id="out"></div>
+  <script>
+    function log(msg) {
+      document.getElementById("out").innerHTML += msg + "<br>";
+    }
+
+    function greet(name) {
+      log("Hello, " + name + "!");
+    }
+
+    function introduceUser() {
+      log("--- introduceUser called ---");
+      greet("Sam");
+      log("--- introduceUser done ---");
+    }
+
+    function start() {
+      log("--- start called ---");
+      introduceUser();
+      log("--- start done ---");
+    }
+
+    start();
+
+    log("");
+    log("Functions call other functions.");
+    log("JS runs them one at a time.");
+    log("The call stack keeps track of the order.");
+  </script>
+</body>
+</html>
