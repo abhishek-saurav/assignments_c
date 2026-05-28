@@ -1,35 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Array in JS</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
-    h2 { color: #1565c0; text-align: center; }
-    .output { background-color: #263238; color: #90caf9; font-family: monospace; padding: 16px; margin: 20px auto; width: 500px; font-size: 14px; }
-  </style>
-</head>
+<html>
 <body>
-  <h2>Array in JS</h2>
-  <div class="output" id="out"></div>
+  <h2>JavaScript Arrays</h2>
+  <p id="demo"></p>
   <script>
-    function log(msg) {
-      document.getElementById("out").innerHTML += msg + "<br>";
-    }
-
-    var hobbies = ["chess", "photography", "guitar", "coding"];
-
-    log("Full array: " + hobbies);
-    log("First item: " + hobbies[0]);
-    log("Last item: " + hobbies[hobbies.length - 1]);
-    log("Length: " + hobbies.length);
-
-    log("");
-    log("--- Looping ---");
-    for (var i = 0; i < hobbies.length; i++) {
-      log(i + ": " + hobbies[i]);
-    }
+    var cars = ["Coding", "Magic", "Learn"];
+    document.getElementById("demo").innerHTML = cars[2];
   </script>
 </body>
 </html>

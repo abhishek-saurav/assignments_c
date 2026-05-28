@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Objects in JS</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
-    h2 { color: #bf360c; text-align: center; }
-    .output { background-color: #263238; color: #ffcc80; font-family: monospace; padding: 16px; margin: 20px auto; width: 500px; font-size: 14px; }
-  </style>
-</head>
+<html>
 <body>
-  <h2>Objects in JS</h2>
-  <div class="output" id="out"></div>
+  <h2>JavaScript Objects and its Properties</h2>
+  <p>There are two different ways to access an object property</p>
+  <p>You can use .property or ["property"].</p>
+  <p id="demo"></p>
   <script>
-    function log(msg) {
-      document.getElementById("out").innerHTML += msg + "<br>";
-    }
-
-    var student = {
-      name: "Sam",
-      age: 15,
-      school: "Greenfield High School",
-      hobby: "chess"
+    var person = {
+      firstName: "I",
+      age: 20,
     };
-
-    log("Name: " + student.name);
-    log("Age: " + student.age);
-    log("School: " + student.school);
-    log("Hobby: " + student.hobby);
+    document.getElementById("demo").innerHTML = person.firstName + " am " + person.age + " years old";
   </script>
 </body>
 </html>

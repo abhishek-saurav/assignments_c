@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syntax, Guide and Commenting</title>
-  <style>
-    body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
-    h2 { color: #1a237e; text-align: center; }
-    .output { background-color: #263238; color: #90caf9; font-family: monospace; padding: 16px; margin: 20px auto; width: 500px; font-size: 14px; }
-  </style>
-</head>
+<html>
 <body>
-  <h2>Syntax, Guide and Commenting</h2>
-  <div class="output" id="out"></div>
+  <h2>Syntax Guide and Commenting</h2>
+  <p>Learning basic syntax of JavaScript</p>
+  <p id="demo"></p>
   <script>
-    function log(msg) {
-      document.getElementById("out").innerHTML += msg + "<br>";
-    }
-
-    log("Hello World");
-    log("My name is Sam");
-    log("I am learning JavaScript");
-    log("This is my first JS program");
+    // This is a comment in JavaScript
+    document.getElementById("demo").innerHTML = "Hello! This is my first JavaScript code.";
   </script>
 </body>
 </html>

@@ -1,55 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sum of Arguments</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
-
-    h2 {
-      color: #bf360c;
-      text-align: center;
-    }
-
-    .output {
-      background-color: #263238;
-      color: #ffcc80;
-      font-family: monospace;
-      padding: 16px;
-      margin: 20px auto;
-      width: 500px;
-      font-size: 14px;
-    }
-  </style>
-</head>
+<html>
 <body>
-
-  <h2>Sum of Arguments</h2>
-  <div class="output" id="out"></div>
-
+  <p>Sum of arguments using the arguments object</p>
+  <p id="result"></p>
   <script>
-    function log(msg) {
-      document.getElementById("out").innerHTML += msg + "<br>";
-    }
-
     function sumAll() {
+      var i;
       var total = 0;
-      for (var i = 0; i < arguments.length; i++) {
-        total = total + arguments[i];
+      for (i = 0; i < arguments.length; i++) {
+        total += arguments[i];
       }
       return total;
     }
-
-    log("sumAll(1, 2, 3) = " + sumAll(1, 2, 3));
-    log("sumAll(10, 20, 30) = " + sumAll(10, 20, 30));
-    log("sumAll(5, 10, 15, 20) = " + sumAll(5, 10, 15, 20));
-    log("sumAll(1, 2, 3, 4, 5) = " + sumAll(1, 2, 3, 4, 5));
-    log("sumAll(100) = " + sumAll(100));
+    document.getElementById("result").innerHTML = sumAll(10, 20, 30);
   </script>
-
 </body>
 </html>
