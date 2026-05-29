@@ -9,9 +9,11 @@
         setTimeout(resolve, ms);
       });
     }
-    delay(2000).then(function() {
-      document.getElementById("status").innerHTML = "Promise resolved after 2 seconds!";
-    });
+    async function run() {
+      await delay(2000);
+      document.getElementById("status").innerHTML = "Done waiting!";
+    }
+    run();
   </script>
 </body>
 </html>
