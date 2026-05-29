@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Form Validation</h2>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="validate()">Submit</button>
+  <p id="message"></p>
+  <script>
+    function validate() {
+      var name = document.getElementById("nameInput").value;
+      if (name === "") {
+        document.getElementById("message").innerHTML = "Name cannot be empty.";
+      } else {
+        document.getElementById("message").innerHTML = "Hello, " + name + "!";
+      }
+    }
+  </script>
+</body>
+</html>

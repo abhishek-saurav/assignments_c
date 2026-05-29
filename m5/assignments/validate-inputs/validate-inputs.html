@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Validate Inputs</h2>
+  <input type="text" id="nameInput" placeholder="Your name"><br><br>
+  <input type="text" id="emailInput" placeholder="Your email"><br><br>
+  <input type="number" id="ageInput" placeholder="Your age"><br><br>
+  <button onclick="validateForm()">Submit</button>
+  <p id="message"></p>
+  <script>
+    function validateForm() {
+      var name = document.getElementById("nameInput").value;
+      var email = document.getElementById("emailInput").value;
+      var age = document.getElementById("ageInput").value;
+      if (name === "") {
+        document.getElementById("message").innerHTML = "Name cannot be empty.";
+      } else if (email === "" || email.includes("@") === false) {
+        document.getElementById("message").innerHTML = "Please enter a valid email.";
+      } else if (age === "" || Number(age) < 1) {
+        document.getElementById("message").innerHTML = "Please enter a valid age.";
+      } else {
+        document.getElementById("message").innerHTML = "Welcome, " + name + "! Age: " + age;
+      }
+    }
+  </script>
+</body>
+</html>

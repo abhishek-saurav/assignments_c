@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Calculator Using JS</h2>
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+  <script>
+    function calculate() {
+      var a = document.getElementById("num1").value;
+      var b = document.getElementById("num2").value;
+      if (a === "" || b === "") {
+        document.getElementById("result").innerHTML = "Please enter both numbers.";
+      } else {
+        var sum = Number(a) + Number(b);
+        document.getElementById("result").innerHTML = a + " + " + b + " = " + sum;
+      }
+    }
+  </script>
+</body>
+</html>

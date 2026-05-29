@@ -9,6 +9,7 @@
 | map-and-arrange-an-array.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/assignments/map-and-arrange-an-array/map-and-arrange-an-array.html |
 | handle-errors-in-js.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/assignments/handle-errors-in-js/handle-errors-in-js.html |
 | asynchronous-functions-in-js.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/assignments/asynchronous-functions-in-js/asynchronous-functions-in-js.html |
+| validate-inputs.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/assignments/validate-inputs/validate-inputs.html |
 
 ## Activities
 
@@ -55,4 +56,12 @@
 | json-in-js.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-29/json-in-js.html |
 | callback-functions.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-29/callback-functions.html |
 | promises-in-js.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-29/promises-in-js.html |
-| async-await-in-js.html | https://github.com/abhisheksaurav-saurav/assignments_c/blob/main/m5/activities/lesson-29/async-await-in-js.html |
+| async-await-in-js.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-29/async-await-in-js.html |
+
+### Lesson 30
+
+| File Name | Link |
+|-----------|------|
+| form-validation.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-30/form-validation.html |
+| validation-using-api.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-30/validation-using-api.html |
+| calculator-using-js.html | https://github.com/abhishek-saurav/assignments_c/blob/main/m5/activities/lesson-30/calculator-using-js.html |
