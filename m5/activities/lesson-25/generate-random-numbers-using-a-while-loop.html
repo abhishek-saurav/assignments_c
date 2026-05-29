@@ -4,13 +4,13 @@
   <h2>Generate Random Numbers Using a While Loop</h2>
   <p id="demo"></p>
   <script>
-    let stars = "";
+    let numbers = "";
     let count = 0;
     while (count < 5) {
-      stars = stars + "* ";
+      numbers = numbers + Math.floor(Math.random() * 100) + "<br>";
       count = count + 1;
     }
-    document.getElementById("demo").innerHTML = stars;
+    document.getElementById("demo").innerHTML = numbers;
   </script>
 </body>
 </html>

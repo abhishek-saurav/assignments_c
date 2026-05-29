@@ -2,7 +2,9 @@
 <html>
 <body>
   <h2>Static Methods in Class</h2>
-  <p id="demo"></p>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
   <script>
     class Planet {
       constructor(name, fact) {
@@ -13,8 +15,12 @@
         return this.name + ": " + this.fact;
       }
     }
-    let p1 = new Planet("Saturn", "Has rings made of ice");
-    document.getElementById("demo").innerHTML = p1.describe();
+    let p1 = new Planet("Earth", "The only planet with life");
+    let p2 = new Planet("Mars", "Known as the Red Planet");
+    let p3 = new Planet("Saturn", "Has rings made of ice");
+    document.getElementById("p1").innerHTML = p1.describe();
+    document.getElementById("p2").innerHTML = p2.describe();
+    document.getElementById("p3").innerHTML = p3.describe();
   </script>
 </body>
 </html>
