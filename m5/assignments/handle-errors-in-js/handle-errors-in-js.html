@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Handle Errors in JS</h2>
+  <p id="error_message"></p>
+  <p id="result"></p>
+  <script>
+    try {
+      addalert("Hello!");
+    } catch(err) {
+      document.getElementById("error_message").innerHTML = err.message;
+    }
+    const multiply = (a, b) => a * b;
+    document.getElementById("result").innerHTML = multiply(3, 7);
+  </script>
+</body>
+</html>

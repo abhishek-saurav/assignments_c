@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Print Random Numbers</h2>
+  <p id="demo"></p>
+  <script>
+    let numbers = "";
+    let count = 0;
+    while (count < 5) {
+      numbers = numbers + Math.floor(Math.random() * 100) + "<br>";
+      count = count + 1;
+    }
+    document.getElementById("demo").innerHTML = numbers;
+  </script>
+</body>
+</html>

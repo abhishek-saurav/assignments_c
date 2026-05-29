@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Delivery Tracker</title>
+</head>
+<body>
+  <h1>My Delivery Tracker</h1>
+  <button onclick="saveOrder()">Save Order</button>
+  <button onclick="startDelivery()">Start Delivery</button>
+  <p>JSON Text: <span id="json-text"></span></p>
+  <p>Loaded Item: <span id="loaded-item"></span></p>
+  <p>Loaded Price: <span id="loaded-price"></span></p>
+  <p>Status: <span id="status"></span></p>
+  <p>Result: <span id="result"></span></p>
+  <script>
+    let order = {
+      item: "Pizza",
+      price: 5,
+      shop: "My Snack Shop"
+    };
+    function saveOrder() {
+      let jsonText = JSON.stringify(order);
+      let loadedOrder = JSON.parse(jsonText);
+      document.getElementById("json-text").innerHTML = jsonText;
+      document.getElementById("loaded-item").innerHTML = loadedOrder.item;
+      document.getElementById("loaded-price").innerHTML = "$" + loadedOrder.price;
+      setTimeout(function() {
+        document.getElementById("status").innerHTML = "Kitchen is preparing...";
+      }, 1000);
+    }
+    function delay(ms) {
+      return new Promise(function(resolve) {
+        setTimeout(resolve, ms);
+      });
+    }
+    async function startDelivery() {
+      await delay(3000);
+      document.getElementById("status").innerHTML = "Out for delivery!";
+      await delay(2000);
+      document.getElementById("result").innerHTML = "Your order has arrived!";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>JS Class</h2>
+  <p id="demo"></p>
+  <script>
+    class Planet {
+      constructor(name, fact) {
+        this.name = name;
+        this.fact = fact;
+      }
+    }
+    let p1 = new Planet("Earth", "The only planet with life");
+    document.getElementById("demo").innerHTML = p1.name + ": " + p1.fact;
+  </script>
+</body>
+</html>

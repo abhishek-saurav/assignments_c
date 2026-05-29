@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Class Inheritance</h2>
+  <p id="demo"></p>
+  <script>
+    class Planet {
+      constructor(name, fact) {
+        this.name = name;
+        this.fact = fact;
+      }
+      describe() {
+        return this.name + ": " + this.fact;
+      }
+    }
+    let p1 = new Planet("Earth", "The only planet with life");
+    let p2 = new Planet("Mars", "Known as the Red Planet");
+    document.getElementById("demo").innerHTML = p1.describe() + "<br>" + p2.describe();
+  </script>
+</body>
+</html>

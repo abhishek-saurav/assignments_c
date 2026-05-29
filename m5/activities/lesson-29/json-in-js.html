@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>JSON in JS</h2>
+  <p id="demo"></p>
+  <script>
+    let order = {
+      item: "Pizza",
+      price: 5,
+      shop: "My Snack Shop"
+    };
+    let jsonText = JSON.stringify(order);
+    document.getElementById("demo").innerHTML = jsonText;
+  </script>
+</body>
+</html>

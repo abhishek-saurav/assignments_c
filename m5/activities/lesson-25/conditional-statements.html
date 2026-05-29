@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Conditional Statements</h2>
+  <p id="rank"></p>
+  <script>
+    let myScore = 75;
+    let rank;
+    if (myScore >= 80) {
+      rank = "Gold";
+    } else if (myScore >= 50) {
+      rank = "Silver";
+    } else {
+      rank = "Bronze";
+    }
+    document.getElementById("rank").innerHTML = rank;
+  </script>
+</body>
+</html>

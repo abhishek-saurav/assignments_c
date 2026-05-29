@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Map and Arrange an Array</h2>
+  <p>Original array sorted ascending, then mapped to double each value:</p>
+  <p id="sorted"></p>
+  <p id="mapped"></p>
+  <script>
+    var numbers = [40, 100, 1, 5, 25, 10];
+    numbers.sort(function(a, b) { return a - b; });
+    document.getElementById("sorted").innerHTML = numbers;
+    function doubleIt(num) {
+      return num * 2;
+    }
+    var doubled = numbers.map(doubleIt);
+    document.getElementById("mapped").innerHTML = doubled;
+  </script>
+</body>
+</html>

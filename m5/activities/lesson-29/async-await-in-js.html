@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Async/Await in JS</h2>
+  <p id="status">Waiting...</p>
+  <p id="result"></p>
+  <script>
+    function delay(ms) {
+      return new Promise(function(resolve) {
+        setTimeout(resolve, ms);
+      });
+    }
+    async function startDelivery() {
+      await delay(3000);
+      document.getElementById("status").innerHTML = "Out for delivery!";
+      await delay(2000);
+      document.getElementById("result").innerHTML = "Your order has arrived!";
+    }
+    startDelivery();
+  </script>
+</body>
+</html>

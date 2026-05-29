@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Static Methods in Class</h2>
+  <p id="demo"></p>
+  <script>
+    class Planet {
+      constructor(name, fact) {
+        this.name = name;
+        this.fact = fact;
+      }
+      describe() {
+        return this.name + ": " + this.fact;
+      }
+    }
+    let p1 = new Planet("Saturn", "Has rings made of ice");
+    document.getElementById("demo").innerHTML = p1.describe();
+  </script>
+</body>
+</html>
