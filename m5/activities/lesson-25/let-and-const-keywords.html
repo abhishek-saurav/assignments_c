@@ -2,12 +2,12 @@
 <html>
 <body>
   <h2>let and const Keywords</h2>
-  <p id="record"></p>
+  <p id="demo"></p>
   <script>
     let myScore = 75;
-    let highScore = 100;
+    const highScore = 100;
     let isTopScore = myScore == highScore;
-    document.getElementById("record").innerHTML = isTopScore;
+    document.getElementById("demo").innerHTML = "My score: " + myScore + "<br>High score: " + highScore + "<br>Is top score: " + isTopScore;
   </script>
 </body>
 </html>
