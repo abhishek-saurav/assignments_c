@@ -2,15 +2,19 @@
 <html>
 <body>
   <h2>Print Random Numbers</h2>
+  <p>Click the button to generate 5 random numbers.</p>
+  <button onclick="generate()">Generate</button>
   <p id="demo"></p>
   <script>
-    let numbers = "";
-    let count = 0;
-    while (count < 5) {
-      numbers = numbers + Math.floor(Math.random() * 100) + "<br>";
-      count = count + 1;
+    function generate() {
+      let numbers = "";
+      let count = 0;
+      while (count < 5) {
+        numbers = numbers + Math.floor(Math.random() * 100) + "<br>";
+        count = count + 1;
+      }
+      document.getElementById("demo").innerHTML = numbers;
     }
-    document.getElementById("demo").innerHTML = numbers;
   </script>
 </body>
 </html>

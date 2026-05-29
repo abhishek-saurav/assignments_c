@@ -2,21 +2,16 @@
 <html>
 <body>
   <h2>Promises in JS</h2>
-  <p>JSON.stringify and JSON.parse</p>
-  <p id="json-text"></p>
-  <p id="loaded-item"></p>
-  <p id="loaded-price"></p>
+  <p id="status">Waiting...</p>
   <script>
-    let order = {
-      item: "Pizza",
-      price: 5,
-      shop: "My Snack Shop"
-    };
-    let jsonText = JSON.stringify(order);
-    let loadedOrder = JSON.parse(jsonText);
-    document.getElementById("json-text").innerHTML = jsonText;
-    document.getElementById("loaded-item").innerHTML = loadedOrder.item;
-    document.getElementById("loaded-price").innerHTML = "$" + loadedOrder.price;
+    function delay(ms) {
+      return new Promise(function(resolve) {
+        setTimeout(resolve, ms);
+      });
+    }
+    delay(2000).then(function() {
+      document.getElementById("status").innerHTML = "Promise resolved after 2 seconds!";
+    });
   </script>
 </body>
 </html>
