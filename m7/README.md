@@ -4,9 +4,12 @@
 
 | File Name | Link |
 |-----------|------|
+| flowchart.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/assignments/flowchart/flowchart.py |
 | number-swapping.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/assignments/number-swapping/number-swapping.py |
 | exam-eligibility.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/assignments/exam-eligibility/exam-eligibility.py |
 | armstrong-number.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/assignments/armstrong-number/armstrong-number.py |
+| fibonacci-series.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/assignments/fibonacci-series/fibonacci-series.py |
+| fun-with-shapes.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/assignments/fun-with-shapes/fun-with-shapes.py |
 
 ## Activities
 
@@ -17,7 +20,6 @@
 | introduction-to-replit.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-37/introduction-to-replit.py |
 | even-odd-flowchart.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-37/even-odd-flowchart.py |
 | welcome-to-the-world-of-programming.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-37/welcome-to-the-world-of-programming.py |
-| flowchart.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-37/flowchart.py |
 
 ### Lesson 38
 
@@ -53,7 +55,6 @@
 | introduce-yourself.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-41/introduce-yourself.py |
 | factorial.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-41/factorial.py |
 | calculator.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-41/calculator.py |
-| fibonacci-series.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-41/fibonacci-series.py |
 
 ### Lesson 42
 
@@ -62,4 +63,3 @@
 | square-on-a-canvas.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-42/square-on-a-canvas.py |
 | star.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-42/star.py |
 | rainbow-spiral.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-42/rainbow-spiral.py |
-| fun-with-shapes.py | https://github.com/abhishek-saurav/assignments_c/blob/main/m7/activities/lesson-42/fun-with-shapes.py |
