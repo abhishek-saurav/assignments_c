@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/996973c893.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+    body { background-color: #2b2b2b; font-family: 'Roboto Slab', serif; }
+    .navbar { background-color: #1a1a1a; }
+    .navbar-brand { color: #f2a900 !important; font-weight: 700; }
+    .nav-link { color: white !important; }
+    #banner { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 100px 0; }
+    .banner-heading { font-size: 3rem; font-weight: 900; color: white; }
+    .banner-subtext { color: rgba(255,255,255,0.85); font-size: 1.2rem; }
+    #about { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .about-box { background-color: rgba(0,0,0,0.6); border-radius: 15px; }
+    .m-heading { font-size: 2.5rem; font-weight: 700; margin: 20px 0; }
+    .btn-outline-warning { border-width: 2px; font-weight: 600; padding: 10px 30px; }
+    #projects { background: #2b2b2b; }
+    .card { border: 0; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+    .card-text { color: #6f7780; font-size: .85rem; }
+    .btn-warning { font-weight: 700; font-size: .8rem; border-radius: 3px; }
+    #social-media { background: #2f3550; }
+    .media_link { border: 2px solid #f2a900; border-radius: 4px; padding: 14px 18px; margin-right: 18px; background: transparent; text-align: left; }
+    .row.pt-5 { gap: 18px; }
+    .media_link h3 { font-size: 16px; font-weight: 600; }
+    .media_link i { font-size: 22px; }
+    footer { background: #2b2b2b; width: 100%; }
+    footer .container { padding: 22px 0 !important; }
+    footer h5 { margin: 0; font-size: 14px; font-weight: 500; color: #8b8b8b; }
+    footer a { color: #f2a900 !important; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#social-media">Social Media</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="banner">
+    <div class="container text-center">
+      <h1 class="banner-heading">Hi, I'm a Web Developer</h1>
+      <p class="banner-subtext">I build websites using HTML, CSS, Bootstrap and JavaScript</p>
+      <a href="#about" class="btn btn-warning mt-3">Learn More</a>
+    </div>
+  </div>
+  <div id="about" class="container-fluid py-5">
+    <div class="container text-white">
+      <h4 class="text-warning">About Me</h4>
+      <div class="about-box p-4 mt-3">
+        <h1 class="m-heading">I create modern websites</h1>
+        <p>I love building websites using HTML, CSS, Bootstrap and JavaScript.</p>
+        <a href="#projects" class="btn btn-outline-warning mt-2">View My Work</a>
+      </div>
+    </div>
+  </div>
+  <div id="projects" class="container text-white py-5">
+    <h4 class="text-warning">Projects</h4>
+    <h1 style="font-weight:900;">My Work</h1>
+    <div class="row mt-4">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">A simple web page built with HTML and CSS.</p>
+            <a href="#" class="btn btn-warning">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">A responsive layout using Bootstrap grid.</p>
+            <a href="#" class="btn btn-warning">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">A JavaScript interactive page.</p>
+            <a href="#" class="btn btn-warning">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="social-media" class="container-fluid">
+    <div class="container text-white py-5">
+      <h4 class="text-warning">Social Media</h4>
+      <h1 class="m-heading">Let's be friends</h1>
+      <div class="row pt-5">
+        <div class="col-3 media_link btn text-white">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <h3>LinkedIn</h3>
+        </div>
+        <div class="col-3 media_link btn text-white">
+          <i class="fab fa-youtube fa-2x"></i>
+          <h3>YouTube</h3>
+        </div>
+        <div class="col-3 media_link btn text-dark bg-warning">
+          <i class="fas fa-envelope fa-2x"></i>
+          <h3>Email</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container text-muted text-center py-3 mt-5">
+      <h5>
+        Copyright &copy; 2024 |
+        <a class="text-warning text-decoration-none" href="#about">All Rights Are Reserved By Codingal Education</a>
+      </h5>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <title>Bank App</title>
+</head>
+<body>
+    <div id="container">
+        <div id="bank-card">
+            <h2>My Bank</h2>
+            <div id="balance-section">
+                <p>Current Balance: $<span id="current-balance">1000</span></p>
+            </div>
+            <div id="input-section">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button id="deposit-btn" onclick="deposit()">Deposit</button>
+                <button id="withdraw-btn" onclick="withdraw()">Withdraw</button>
+            </div>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script>
+        function deposit() {
+            var entered_amount = document.getElementById("amount").value;
+            var current_balance_el = document.getElementById("current-balance");
+            var account_balance = parseInt(current_balance_el.innerText) + parseInt(entered_amount);
+            current_balance_el.innerHTML = parseInt(account_balance);
+            document.getElementById("message").innerHTML = "Deposited $" + entered_amount;
+        }
+        function withdraw() {
+            var entered_amount = document.getElementById("amount").value;
+            var current_balance_el = document.getElementById("current-balance");
+            var account_balance = parseInt(current_balance_el.innerText) - parseInt(entered_amount);
+            current_balance_el.innerHTML = parseInt(account_balance);
+            document.getElementById("message").innerHTML = "Withdrew $" + entered_amount;
+        }
+    </script>
+</body>
+</html>
