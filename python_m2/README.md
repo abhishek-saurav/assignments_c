@@ -56,3 +56,12 @@ Rows are in **M2 Activity & ACP submission form order** — work straight down t
 | M2L6 Activity 2: Star | star.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m2/activities/lesson-14/star.py) |
 | M2L6 Activity 3: Spiral pattern | spiral-pattern.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m2/activities/lesson-14/spiral-pattern.py) |
 | M2L6 ACP: Square | square.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m2/assignments/square/square.py) |
+
+## Lesson-plan projects
+
+Featured projects from the lesson pages. Not on the submission form.
+
+| Lesson | File | Link |
+|---|---|---|
+| Lesson 11 | my-chore-checklist-countdown.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m2/projects/lesson-11/my-chore-checklist-countdown.py) |
+| Lesson 12 | atm-cash-dispenser.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m2/projects/lesson-12/atm-cash-dispenser.py) |
