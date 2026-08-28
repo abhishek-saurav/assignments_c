@@ -1,0 +1,15 @@
+try:
+    first = int(input("Enter the first number: "))
+    second = int(input("Enter the second number: "))
+    result = first / second
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Division by zero is error !!")
+except ValueError:
+    print("Please enter valid whole numbers")
+except:
+    print("Wrong input")
+else:
+    print("No exceptions")
+finally:
+    print("This will execute no matter what")
