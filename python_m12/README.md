@@ -5,7 +5,7 @@ Rows are in **M12 Activity & ACP submission form order** (activities and ACPs in
 
 Each script runs its SQL against an in-memory SQLite database with Python's `sqlite3` module.
 
-The Activity form is a Typeform with generic link fields (SQL1 ... SQL6, SQL6, SQL6/SQL 7, capstone project, New York Restaurant). The Form Question column below is the exact field title, mapped in module-table order. The field titled `SQL6<tab>SQL 7` has no matching activity in the module table, so it has no file here.
+The Activity form is a Typeform with generic link fields (SQL1 ... SQL6, SQL6, SQL6/SQL 7, capstone project, New York Restaurant). The Form Question column below is the exact field title, mapped in module-table order. The field titled `SQL6<tab>SQL 7` has no matching activity in the module table; it is assumed to be a third Lesson 70 activity and holds `book-club-explorer.py` (unconfirmed).
 
 ## Lesson 67 – SQL- CREATE TABLE
 
@@ -36,6 +36,7 @@ The Activity form is a Typeform with generic link fields (SQL1 ... SQL6, SQL6, S
 |---|---|---|
 | SQL6 | nobel-prize-winners-table-and-queries.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m12/activities/lesson-70/nobel-prize-winners-table-and-queries.py) |
 | SQL6 | department-table-and-aggregate-queries.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m12/activities/lesson-70/department-table-and-aggregate-queries.py) |
+| SQL6 SQL 7 | book-club-explorer.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m12/activities/lesson-70/book-club-explorer.py) |
 | Sortt & Filter | sort-and-filter.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m12/assignments/sort-and-filter/sort-and-filter.py) |
 
 ## Lesson 71 – SQL Capstone Project-1
@@ -57,4 +58,3 @@ The Activity form is a Typeform with generic link fields (SQL1 ... SQL6, SQL6, S
 | Lesson | File | Link |
 |---|---|---|
 | Lesson 69 – SQL- AGGREGATE FUNCTIONS | zoo-explorer.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m12/projects/lesson-69/zoo-explorer.py) |
-| Lesson 70 – SQL- GROUPING,FILTERING & SORTING | book-club-explorer.py | [view](https://github.com/abhishek-saurav/assignments_c/blob/main/python_m12/projects/lesson-70/book-club-explorer.py) |
